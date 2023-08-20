@@ -33,13 +33,13 @@ searchIcon.onclick = function () {
     mainNav.style.display = "none"
     searchBar.style.display = 'flex'
 }
+
 close.onclick = function () {
     mainNav.style.display = "block"
     searchBar.style.display = 'none'
 }
 
 pc.onclick = function () {
-    console.log(pcModal.style.display)
     if (pcModal.style.display === "none" || pcModal.style.display === '') {
         pcModal.style.display = "block";
         pcText.style.fontWeight = "bold"
@@ -155,8 +155,4 @@ nintendo.onclick = function () {
     xboxText.style.fontWeight = "normal"
     xboxAngleDown.style.display = "block"
     xboxAngleUp.style.display = "none"
-}
-
-window.onclick = function (event) {
-    console.log(event.target)
 }
